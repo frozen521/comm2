@@ -44,7 +44,7 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent),
              << serialPortInfo.systemLocation()
              << (serialPortInfo.vendorIdentifier() ? QString::number(serialPortInfo.vendorIdentifier(), 16) : blankString)
              << (serialPortInfo.productIdentifier() ? QString::number(serialPortInfo.productIdentifier(), 16) : blankString);
-//               qSort(list.begin(), list.end());
+        //               qSort(list.begin(), list.end());
         ui->comboBoxSeriNum->addItem(list.first(), list);
     }
 
@@ -89,12 +89,12 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-
-void MainWindow::aboutme(){
+void MainWindow::aboutme()
+{
     QMessageBox msg;
     msg.setText("由杨正谦制作!");
     msg.exec();
-    qDebug() <<"yzq" << endl;
+    qDebug() << "yzq" << endl;
 }
 void MainWindow::on_sendDataButton_clicked()
 {
@@ -206,20 +206,23 @@ void MainWindow::sendString(QString qstr)
 }
 //设置电流值
 void MainWindow::on_sendCurButton_clicked()
-{   QString str = ui->textEditSendCurData->toPlainText();
+{
+    QString str = ui->textEditSendCurData->toPlainText();
 
-    if(str.isNull()||str.isEmpty()){
+    if (str.isNull() || str.isEmpty())
+    {
         QMessageBox msg;
-        msg.setText("请输入电流值");
-        msg.exec();
+        msg.setText("请输入电流值!");msg.exec();
         ui->textEditSendCurData->setFocus();
     }
- else{
+    else
+    {
 
-    QString status = QString("CUR %1\r")
-                         .arg(str);
-    cout << status.toStdString() << endl;
-    sendString(status);}
+        QString status = QString("CUR %1\r")
+                             .arg(str);
+        cout << status.toStdString() << endl;
+        sendString(status);
+    }
 }
 
 void MainWindow::on_recCurButton_clicked()
@@ -264,14 +267,44 @@ void MainWindow::readData()
     }
 }
 
-
-
 void MainWindow::on_clearDataButton_clicked()
 {
     ui->textBrowserReceive->clear();
 }
 
-void MainWindow::on_actionGuess_triggered()
+void MainWindow::on_actionAbout_triggered()
 {
+}
 
+void MainWindow::on_actionGauss_triggered()
+{
+    //新建一个窗口对象，其中的this指定了新的窗口的父对象是MainWindow，在销毁Mainwindow时也会销毁子对象，即该窗口对象
+        gaussdialog = new GuessDialog(this);
+        //Modal属性决定了show()应该将弹出的dialog设置为模态还是非模态
+        //默认情况下该属性为false并且show（）弹出的窗口是非模态的
+        //把这个属性设置为true就详单与设置QWidget::windowModality为Qt::ApplicationModal
+        //执行exec（）忽略这个Modal这个属性，并且把弹出的dialog设置为模态的
+        gaussdialog->setModal(false);    //此处ture为模态，false为非模态
+        gaussdialog->show();
+}
+
+void MainWindow::on_actionCam_triggered()
+{
+    camdialog=new CamDialog(this);
+    camdialog->setModal(false);
+    camdialog->show();
+}
+
+void MainWindow::on_actionIndex_triggered()
+{
+    QMessageBox msgindex;
+    msgindex.setText("没有索引!!!");
+    msgindex.exec();
+}
+
+void MainWindow::on_actionenv_triggered()
+{
+    algorithmdialog =new AlgorithmDialog(this);
+    algorithmdialog->setModal(false);
+    algorithmdialog->show();
 }
