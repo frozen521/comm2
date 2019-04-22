@@ -279,7 +279,7 @@ void MainWindow::on_actionAbout_triggered()
 void MainWindow::on_actionGauss_triggered()
 {
     //新建一个窗口对象，其中的this指定了新的窗口的父对象是MainWindow，在销毁Mainwindow时也会销毁子对象，即该窗口对象
-        gaussdialog = new GuessDialog(this);
+        gaussdialog = new GaussDialog(this);
         //Modal属性决定了show()应该将弹出的dialog设置为模态还是非模态
         //默认情况下该属性为false并且show（）弹出的窗口是非模态的
         //把这个属性设置为true就详单与设置QWidget::windowModality为Qt::ApplicationModal

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>GuessDialog</class>
- <widget class="QDialog" name="GuessDialog">
+ <class>GaussDialog</class>
+ <widget class="QDialog" name="GaussDialog">
   <property name="geometry">
    <rect>
     <x>0</x>

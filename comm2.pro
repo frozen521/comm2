@@ -27,22 +27,22 @@ CONFIG += serialport
 SOURCES += \
         main.cpp \
         mainwindow.cpp \
-    guessdialog.cpp \
     camdialog.cpp \
-    algorithmdialog.cpp
+    algorithmdialog.cpp \
+    gaussdialog.cpp
 
 
 HEADERS += \
         mainwindow.h \
-    guessdialog.h \
     camdialog.h \
-    algorithmdialog.h
+    algorithmdialog.h \
+    gaussdialog.h
 
 FORMS += \
     mainwindow.ui \
-    guessdialog.ui \
     camdialog.ui \
-    algorithmdialog.ui
+    algorithmdialog.ui \
+    gaussdialog.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

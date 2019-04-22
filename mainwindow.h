@@ -1,6 +1,6 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
-#include "guessdialog.h"
+#include "gaussdialog.h"
 #include "camdialog.h"
 #include "algorithmdialog.h"
 #include <QMainWindow>
@@ -54,7 +54,7 @@ private slots:
 private:
   Ui::MainWindow *ui;
   QSerialPort *serial; //串口实例
-  GuessDialog *gaussdialog;
+  GaussDialog *gaussdialog;
   CamDialog *camdialog;
   AlgorithmDialog *algorithmdialog;
 };
