@@ -1,10 +1,14 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+
 #include <iostream>
 #include <QMessageBox>
-#include <QString>
-#include <QCoreApplication>
+
+#include <QWidget>
+#include <QPushButton>
 #include <QDebug>
+#include <QString>
+
 using namespace std;
 static const char blankString[] = QT_TRANSLATE_NOOP("SettingsDialog", "N/A");
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent),
@@ -265,4 +269,9 @@ void MainWindow::readData()
 void MainWindow::on_clearDataButton_clicked()
 {
     ui->textBrowserReceive->clear();
+}
+
+void MainWindow::on_actionGuess_triggered()
+{
+
 }

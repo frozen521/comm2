@@ -28,11 +28,13 @@ SOURCES += \
         main.cpp \
         mainwindow.cpp
 
+
 HEADERS += \
         mainwindow.h
 
 FORMS += \
-        mainwindow.ui
+    guess.ui \
+    mainwindow.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

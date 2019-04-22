@@ -41,6 +41,8 @@ void sendString(QString qstr);
 
     void on_clearDataButton_clicked();
 
+    void on_actionGuess_triggered();
+
 private:
     Ui::MainWindow *ui;
     QSerialPort *serial; //串口实例
