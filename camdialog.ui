@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>708</width>
-    <height>467</height>
+    <width>516</width>
+    <height>491</height>
    </rect>
   </property>
   <property name="font">
@@ -16,13 +16,13 @@
    </font>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>摄像头</string>
   </property>
   <widget class="QPushButton" name="pushButton_2">
    <property name="geometry">
     <rect>
-     <x>280</x>
-     <y>370</y>
+     <x>130</x>
+     <y>410</y>
      <width>111</width>
      <height>41</height>
     </rect>
@@ -35,7 +35,7 @@
    <property name="geometry">
     <rect>
      <x>130</x>
-     <y>370</y>
+     <y>360</y>
      <width>111</width>
      <height>41</height>
     </rect>
@@ -44,17 +44,40 @@
     <string>打开摄像头</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label">
+  <widget class="QPushButton" name="pushButton_3">
    <property name="geometry">
     <rect>
-     <x>100</x>
-     <y>30</y>
-     <width>421</width>
-     <height>271</height>
+     <x>260</x>
+     <y>360</y>
+     <width>111</width>
+     <height>41</height>
     </rect>
    </property>
    <property name="text">
-    <string>TextLabel</string>
+    <string>拍照</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_4">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>410</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>摄影</string>
+   </property>
+  </widget>
+  <widget class="QGraphicsView" name="graphicsView">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>20</y>
+     <width>451</width>
+     <height>301</height>
+    </rect>
    </property>
   </widget>
  </widget>
