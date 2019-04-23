@@ -19,4 +19,4 @@ private:
     Ui::GaussDialog *ui;
 };
 
-#endif // GUESSDIALOG_H
+#endif // GAUSSDIALOG_H

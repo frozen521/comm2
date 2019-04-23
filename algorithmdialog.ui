@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>605</width>
+    <width>530</width>
     <height>347</height>
    </rect>
   </property>
@@ -22,8 +22,8 @@
   <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
-     <x>110</x>
-     <y>60</y>
+     <x>60</x>
+     <y>100</y>
      <width>171</width>
      <height>31</height>
     </rect>
@@ -44,7 +44,7 @@
        </font>
       </property>
       <property name="placeholderText">
-       <string>单位:N</string>
+       <string>单位:cm</string>
       </property>
      </widget>
     </item>
@@ -53,9 +53,9 @@
   <widget class="QWidget" name="layoutWidget_2">
    <property name="geometry">
     <rect>
-     <x>110</x>
-     <y>110</y>
-     <width>173</width>
+     <x>60</x>
+     <y>150</y>
+     <width>171</width>
      <height>31</height>
     </rect>
    </property>
@@ -75,7 +75,7 @@
        </font>
       </property>
       <property name="placeholderText">
-       <string>单位:N</string>
+       <string>green</string>
       </property>
      </widget>
     </item>
@@ -84,21 +84,21 @@
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>210</x>
-     <y>250</y>
-     <width>121</width>
+     <x>150</x>
+     <y>230</y>
+     <width>181</width>
      <height>51</height>
     </rect>
    </property>
    <property name="text">
-    <string>环境设定完毕!</string>
+    <string>环境设定完毕!开始执行!</string>
    </property>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
-     <x>110</x>
-     <y>10</y>
+     <x>60</x>
+     <y>50</y>
      <width>171</width>
      <height>31</height>
     </rect>
@@ -120,6 +120,99 @@
       </property>
       <property name="placeholderText">
        <string>单位:N</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget_3">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>50</y>
+     <width>181</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_4">
+    <item>
+     <widget class="QLabel" name="label_4">
+      <property name="text">
+       <string>设置物体质量:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTextEdit" name="textEditSendCurData_4">
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="placeholderText">
+       <string>单位:kg</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget_4">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>100</y>
+     <width>181</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_5">
+    <item>
+     <widget class="QLabel" name="label_5">
+      <property name="text">
+       <string>设置奖励函数:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTextEdit" name="textEditSendCurData_5">
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="placeholderText">
+       <string>10</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget_5">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>150</y>
+     <width>181</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_6">
+    <item>
+     <widget class="QLabel" name="label_6">
+      <property name="text">
+       <string>设置动作:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTextEdit" name="textEditSendCurData_6">
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="placeholderText">
+       <string>w e n s</string>
       </property>
      </widget>
     </item>

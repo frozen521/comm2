@@ -29,6 +29,7 @@ SOURCES += \
         mainwindow.cpp \
     camdialog.cpp \
     algorithmdialog.cpp \
+    gaussdialog.cpp \
     gaussdialog.cpp
 
 
@@ -36,12 +37,14 @@ HEADERS += \
         mainwindow.h \
     camdialog.h \
     algorithmdialog.h \
+    gaussdialog.h \
     gaussdialog.h
 
 FORMS += \
     mainwindow.ui \
     camdialog.ui \
     algorithmdialog.ui \
+    gaussdialog.ui \
     gaussdialog.ui
 
 # Default rules for deployment.

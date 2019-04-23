@@ -1325,7 +1325,7 @@
     </property>
     <addaction name="actionopen"/>
     <addaction name="actionnew"/>
-    <addaction name="action22"/>
+    <addaction name="actionsave"/>
    </widget>
    <widget class="QMenu" name="menuSettings">
     <property name="title">
@@ -1382,7 +1382,7 @@
     <string>摄像头</string>
    </property>
   </action>
-  <action name="action22">
+  <action name="actionsave">
    <property name="text">
     <string>保存</string>
    </property>

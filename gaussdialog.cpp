@@ -1,5 +1,5 @@
 #include "gaussdialog.h"
-#include "ui_Gaussdialog.h"
+#include "ui_gaussdialog.h"
 
 GaussDialog::GaussDialog(QWidget *parent) :
     QDialog(parent),
